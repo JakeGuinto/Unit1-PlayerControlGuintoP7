@@ -14,7 +14,7 @@ public class FollowPlayer : MonoBehaviour
     private Vector3 offset = new Vector3(0, 5, -7);
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         // Offset the camera behind the by adding to the player's position
         transform.position = player.transform.position + offset; 
